@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body class="bg-light">
 
+<!-- navbar  -->
   <?php
   require_once("komponen/navbar.php")
   ?>
+ 
 
 <div class="container my-4">
   <h3 class="nike-title">Nike Runing</h3>
@@ -110,7 +121,63 @@
 
 
 <!-- Footer -->
-
+<footer class="bg-light text-dark pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+     
+      <div class="col-md-4 col-sm-6 mb-3">
+        <h6 class="fw-bold">Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Find A Store</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Become A Member</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Running Shoe Finder</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Education Discounts</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Send Us Feedback</a></li>
+        </ul>
+      </div>
+      
+     
+      <div class="col-md-4 col-sm-6 mb-3">
+        <h6 class="fw-bold">Help</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Get Help</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Order Status</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Delivery</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Returns</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Payment Options</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+      
+     
+      <div class="col-md-4 col-sm-6 mb-3">
+        <h6 class="fw-bold">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">News</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Careers</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Investors</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Sustainability</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Impact</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Report a Concern</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <hr>
+    
+    
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2025 YourBrand, Inc. All rights reserved</p>
+      <div>
+        <a href="#" class="text-dark text-decoration-none me-3">Terms of Sale</a>
+        <a href="#" class="text-dark text-decoration-none me-3">Terms of Use</a>
+        <a href="#" class="text-dark text-decoration-none me-3">Privacy Policy</a>
+        <a href="#" class="text-dark text-decoration-none">Privacy Settings</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </script>
 </body>
