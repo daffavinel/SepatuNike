@@ -1,0 +1,107 @@
+<<<<<<< HEAD
+body {
+  background-color: #f8f9fa; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gambar sepatu */
+.shoe {
+  max-width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Harga */
+.price-tag {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Animasi panah */
+.arrows span {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  color: #dc3545; 
+  animation: bounce 1s infinite;
+}
+
+.arrows span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.arrows span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* Card Produk */
+.card {
+  border-radius: 16px;
+  border: none;
+}
+
+/* Tombol Back & Cart */
+.btn-outline-secondary,
+.btn-outline-dark {
+  border-radius: 50px;
+  padding: 6px 14px;
+}
+=======
+body {
+  background-color: #f8f9fa; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gambar sepatu */
+.shoe {
+  max-width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Harga */
+.price-tag {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Animasi panah */
+.arrows span {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  color: #dc3545; 
+  animation: bounce 1s infinite;
+}
+
+.arrows span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.arrows span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* Card Produk */
+.card {
+  border-radius: 16px;
+  border: none;
+}
+
+/* Tombol Back & Cart */
+.btn-outline-secondary,
+.btn-outline-dark {
+  border-radius: 50px;
+  padding: 6px 14px;
+}
+>>>>>>> 3aa376d7a8ea524a01a6da99d0e1cbc95ef28234

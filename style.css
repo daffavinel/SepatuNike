@@ -1,0 +1,553 @@
+<<<<<<< HEAD
+/* ================== GLOBAL ================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+  color: #111;
+}
+
+/* ================== NIKE STYLE ================== */
+.nike-title {
+  margin-top: 100px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.card.product-card {
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  margin: 10px 0 100px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+.card.product-card:active {
+  transform: scale(0.95);
+}
+.card.product-card img {
+  transition: transform 0.4s ease;
+}
+.card.product-card:hover img {
+  transform: scale(1.05) rotate(-2deg);
+}
+.card.product-card .card-title {
+  font-weight: 800;
+  color: #ffc107; 
+  letter-spacing: 0.5px;
+}
+.card.product-card .card-text {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+.card.product-card small {
+  color: #aaa;
+}
+
+/* Animasi Card Umum */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+.card:active {
+  transform: scale(0.95);
+}
+
+/* Footer Umum */
+footer {
+  background-color: #f5f5f5; 
+  color: #333;
+  font-size: 14px;
+  margin-top: 50px;
+}
+footer h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer ul {
+  padding-left: 0;
+  gap: 20px;
+}
+footer ul li {
+  margin-bottom: 0.5rem;
+  gap: 20px;
+}
+footer ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+footer ul li a:hover {
+  color: #000; 
+}
+footer hr {
+  margin: 1.5rem 0;
+  border-color: #ddd;
+}
+footer p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  gap: 20px;
+}
+footer a {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  gap: 20px;
+}
+footer a:hover {
+  color: #000;
+}
+
+/* ================== CAROUSEL (WOMEN) ================== */
+.carousel-item img {
+  border-radius: 20px;
+  object-fit: cover;
+  height: 700px;   
+}
+.carousel-caption {
+  background: rgba(0,0,0,.55);
+  border-radius: 10px;
+  padding: .3rem .6rem;
+}
+
+/* ================== TITLE & BUTTON ================== */
+h4 {
+  margin-top: 60px;
+  font-weight: 500;
+  font-size: 16px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0 25px;
+}
+.btn {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  background: #333;
+}
+
+/* ================== KIDS STYLE ================== */
+
+/* Judul Halaman Kids */
+.kids-title {
+  margin-top: 100px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+/* Card Produk Kids */
+.kids-card.product-card {
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  margin: 10px 0 100px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.kids-card.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+.kids-card.product-card:active {
+  transform: scale(0.95);
+}
+.kids-card.product-card img {
+  transition: transform 0.4s ease;
+}
+.kids-card.product-card:hover img {
+  transform: scale(1.05) rotate(-2deg);
+}
+.kids-card.product-card .card-title {
+  font-weight: 800;
+  color: #ffc107; 
+  letter-spacing: 0.5px;
+}
+.kids-card.product-card .card-text {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+.kids-card.product-card small {
+  color: #aaa;
+}
+
+/* Container Halaman Kids */
+.kids-body {
+  position: relative;
+  padding-bottom: 50px;
+}
+.kids-page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Scroll Produk Horizontal */
+.kids-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.kids-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.kids-scroll::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+.kids-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Card Produk dalam Scroll */
+.kids-product-card {
+  border-radius: 15px;
+  flex: 0 0 auto;
+  transition: transform 0.2s ease;
+}
+.kids-product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Info Produk */
+.kids-product-info h5 {
+  font-size: 1.1rem;
+}
+.kids-product-info p {
+  margin: 0;
+}
+
+/* Gambar Produk */
+.kids-product-img img {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Label Vertikal (kanan) */
+.kids-vertical-label {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 18px;
+  font-weight: bold;
+  background: #f8f9fa;
+  padding: 10px 5px;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  cursor: default;
+  user-select: none;
+}
+
+/* Footer Kids */
+.kids-footer {
+  background-color: #f5f5f5; 
+  color: #333;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.kids-footer h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.kids-footer ul {
+  padding-left: 0;
+}
+.kids-footer ul li {
+  margin-bottom: 0.5rem;
+}
+.kids-footer ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.kids-footer ul li a:hover {
+  color: #000; 
+}
+.kids-footer hr {
+  margin: 1.5rem 0;
+  border-color: #ddd;
+}
+.kids-footer p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+.kids-footer a {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+}
+.kids-footer a:hover {
+  color: #000;
+}
+
+/* ================== SHOP PRICE STYLE ================== */
+.shop-old-price,
+.shop-discount {
+  display: inline-block;
+}
+.shop-old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 6px;
+  font-size: 14px;
+}
+.shop-discount {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 4px;
+  transition: color 0.3s ease;
+}
+.shop-discount:hover {
+  color: #b02a37;
+}
+=======
+/* titel nike */
+.nike-title {
+  margin-top: 100px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+  letter-spacing: px;
+  text-align: left; }
+
+/* landing page */
+.card.product-card {
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  height: 200px;
+    text-align: left;
+}
+
+.mb-3 {
+  text-align: left;
+}
+
+.card.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card.product-card .card-title {
+  font-weight: 800;
+  color: #ffc107; 
+  letter-spacing: 0.5px;
+}
+
+.card.product-card .card-text {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.card.product-card small {
+  color: #aaa;
+}
+
+.card.product-card img {
+  transition: transform 0.4s ease;
+}
+
+.card.product-card:hover img {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* animasi produk */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Membesar sedikit */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2); /* Tambah bayangan */
+}
+
+.card:active {
+  transform: scale(0.95); /* Mengecil saat ditekan */
+}
+
+
+
+
+/* Footer Style */
+footer {
+  background-color: #f5f5f5; 
+  color: #333;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+footer h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  padding-left: 0;
+  gap: 20px;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+  gap: 20px;
+}
+
+footer ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: #000; 
+}
+
+footer hr {
+  margin: 1.5rem 0;
+  border-color: #ddd;
+}
+
+footer p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  gap: 20px;
+}
+
+footer a {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  gap: 20px;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+
+/* gambar nya women */
+ body { background:#f8f9fa; }
+      .carousel-item img {
+        border-radius: 20px;
+        object-fit: cover;
+        height: 700px;   
+      }
+      .carousel-caption {
+        background: rgba(0,0,0,.55);
+        border-radius: 10px;
+        padding: .3rem .6rem;
+      }
+
+      /* tulisan atas soft all */
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+      color: #111;
+    }
+
+    h4 {
+      margin-top: 60px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 900;
+      margin: 15px 0;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #444;
+      margin: 10px 0 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .btn:hover {
+      background: #333;
+    }
+
+
+    /* css kids */
+
+   
+>>>>>>> 3aa376d7a8ea524a01a6da99d0e1cbc95ef28234
