@@ -1,8 +1,7 @@
-<!-- footer.html -->
-<footer class="bg-light text-dark pt-5 pb-4">
+<footer class="bg-light text-dark pt-5 pb-4 mt-5">
   <div class="container">
     <div class="row">
-      <!-- Resources -->
+
       <div class="col-md-4 col-sm-6 mb-3">
         <h6 class="fw-bold">Resources</h6>
         <ul class="list-unstyled">
@@ -13,7 +12,7 @@
           <li><a href="#" class="text-dark text-decoration-none">Send Us Feedback</a></li>
         </ul>
       </div>
-      <!-- Help -->
+
       <div class="col-md-4 col-sm-6 mb-3">
         <h6 class="fw-bold">Help</h6>
         <ul class="list-unstyled">
@@ -25,7 +24,7 @@
           <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
         </ul>
       </div>
-      <!-- Company -->
+
       <div class="col-md-4 col-sm-6 mb-3">
         <h6 class="fw-bold">Company</h6>
         <ul class="list-unstyled">
@@ -41,7 +40,7 @@
     </div>
     <hr>
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-0">&copy; 2025 YourBrand, Inc. All rights reserved</p>
+      <p class="mb-0">&copy; 2025 Nike Shop, Inc. All rights reserved</p>
       <div>
         <a href="#" class="text-dark text-decoration-none me-3">Terms of Sale</a>
         <a href="#" class="text-dark text-decoration-none me-3">Terms of Use</a>
@@ -51,3 +50,8 @@
     </div>
   </div>
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

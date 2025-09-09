@@ -1,183 +1,40 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Shop</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    </head>
-<body class="bg-light">
+<?php 
+    // header
+    include "komponen/header.php";
+?>
+<body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
+    <?php 
+        // navbar
+        include "komponen/navbar.php";
 
-<!-- navbar  -->
-  <?php
-  require_once("komponen/navbar.php")
-  ?>
- 
+        
+        $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
-<div class="container my-4">
-  <h3 class="nike-title">Nike Runing</h3>
-  
-  <div class="card product-card">
-    <div class="card-body">
-      <h5 class="card-title">10% Discount</h5>
-      <p class="card-text">Nike Air Zoom, Regular 41 White Oblique</p>
-      <small>Fd2722-110</small>
-    </div>
-    <img src="FD2722-110-1-removebg-preview.png" 
-         class="position-absolute end-0 top-50 translate-middle-y me-3 rounded-3" 
-         alt="sepatu" width="250">
-  </div>
-</div>
+        if ($page == 'home') {
+            include "komponen/bilbort.php";  
+            include "page/home.php";          
+        } 
+        else if ($page == 'shopall') {
+            include "page/shopall.php";      
+        } 
+        else if ($page == 'detail') {
+    include "page/detail.php";
+        }
 
-
-<!-- Produk  -->
-<div class="container">
-  <h5 class="mb-3">ALL</h5>
-  <div class="row g-3">
-    <div class="col-6 col-md-3">
-      <div class="card h-100" onclick="openDetail('alphafly')">
-        <a href="ind.html">
-        <img src="images-removebg-preview (1).png" class="card-img-top" alt="">
-         </a>
-        <div class="card-body">
-          <h6 class="card-title">ALPHAFLY NEXT%2</h6>
-          <p class="fw-bold">Rp 4.899.000</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card h-100">
-        <img src="Fd6559-100-1-removebg-preview.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h6 class="card-title">Alphafly Next 2 Kipchoge</h6>
-          <p class="fw-bold">Rp 1.223.700</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card h-100">
-        <img src="images__1_-removebg-preview.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h6 class="card-title">W Revolution 7</h6>
-          <p class="fw-bold">Rp 847.200</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card h-100">
-        <img src="MP-17893-SR-1_MP-17893-SR-1-removebg-preview.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h6 class="card-title">Air Zoom Pegasus 39</h6>
-          <p class="fw-bold">Rp 1.190.000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="row g-3">
-    <div class="col-6 col-md-3">
-      <div class="card h-100" onclick="openDetail('alphafly')">
-        <img src="images-removebg-preview (1).png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h6 class="card-title">ALPHAFLY NEXT%2</h6>
-          <p class="fw-bold">Rp 4.899.000</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card h-100">
-        <img src="Fd6559-100-1-removebg-preview.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h6 class="card-title">Alphafly Next 2 Kipchoge</h6>
-          <p class="fw-bold">Rp 1.223.700</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card h-100">
-        <img src="images__1_-removebg-preview.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h6 class="card-title">W Revolution 7</h6>
-          <p class="fw-bold">Rp 847.200</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card h-100">
-        <img src="MP-17893-SR-1_MP-17893-SR-1-removebg-preview.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h6 class="card-title">Air Zoom Pegasus 39</h6>
-          <p class="fw-bold">Rp 1.190.000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Footer -->
-<footer class="bg-light text-dark pt-5 pb-4">
-  <div class="container">
-    <div class="row">
-     
-      <div class="col-md-4 col-sm-6 mb-3">
-        <h6 class="fw-bold">Resources</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-dark text-decoration-none">Find A Store</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Become A Member</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Running Shoe Finder</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Education Discounts</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Send Us Feedback</a></li>
-        </ul>
-      </div>
       
-     
-      <div class="col-md-4 col-sm-6 mb-3">
-        <h6 class="fw-bold">Help</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-dark text-decoration-none">Get Help</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Order Status</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Delivery</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Returns</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Payment Options</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
-        </ul>
-      </div>
-      
-     
-      <div class="col-md-4 col-sm-6 mb-3">
-        <h6 class="fw-bold">Company</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">News</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Careers</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Investors</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Sustainability</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Impact</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Report a Concern</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <hr>
-    
-    
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-0">&copy; 2025 YourBrand, Inc. All rights reserved</p>
-      <div>
-        <a href="#" class="text-dark text-decoration-none me-3">Terms of Sale</a>
-        <a href="#" class="text-dark text-decoration-none me-3">Terms of Use</a>
-        <a href="#" class="text-dark text-decoration-none me-3">Privacy Policy</a>
-        <a href="#" class="text-dark text-decoration-none">Privacy Settings</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
-</script>
+        // footer
+        include "komponen/footer.php";
+    ?>
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
 </body>
+</html>
