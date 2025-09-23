@@ -3,7 +3,7 @@
   <div class="row g-3">
     <div class="col-6 col-md-3">
       <div class="card h-100">
-        <a href="ind.html">
+        <a href="index.php?page=detail">
           <img src="images-removebg-preview (1).png" class="card-img-top" alt="">
         </a>
         <div class="card-body">
@@ -83,3 +83,5 @@
     </div>
   </div>
 </div>
+
+<a href="index.php?page=shopall" class="btn">Shop</a>

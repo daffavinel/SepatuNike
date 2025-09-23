@@ -1,6 +1,6 @@
 <div class="container py-4">
   <div class="d-flex justify-content-between align-items-center mb-4">
-    <a href="index.php?page=shopall" class="btn btn-outline-secondary">←</a>
+    <a href="index.php?page=home" class="btn btn-outline-secondary">←</a>
     <h2 class="h4 m-0">ALPHAFLY NEXT%2</h2>
     <a href="#" class="btn btn-outline-dark">🛍</a>
   </div>
@@ -21,7 +21,7 @@
 
       <!-- Gambar Sepatu -->
       <div class="col-md-4 text-center">
-        <img src="images/images-removebg-preview (1).png" alt="Nike Alphafly" class="shoe img-fluid">
+        <img src="images-removebg-preview (1).png" alt="Nike Alphafly" class="shoe img-fluid">
         <div class="mt-3">
           <p class="price-tag mb-0">Rp. 4.899.000</p>
           <span class="badge bg-danger">Price Off</span>
@@ -35,7 +35,7 @@
           <span>⬇</span>
           <span>⬇</span>
         </div>
-        <img src="images_2-removebg-preview.png" alt="Nike Box" class="img-fluid">
+        <img src="images__2_-removebg-preview.png" alt="Nike Box" class="img-fluid">
       </div>
     </div>
   </div>
