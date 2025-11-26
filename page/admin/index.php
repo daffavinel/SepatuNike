@@ -343,7 +343,7 @@
       <!-- [ Main Content ] start -->
       
         <?php 
-           include "../admin/page/dashboard.php";
+           include "../../route/admin.php";
         ?>
 
     </div>

@@ -1,9 +1,8 @@
 <form method="POST" action="">
   <div class="mb-3">
-    <label for="" class="form-label">daffa botak</label>
+    <label for="" class="form-label">daffa</label>
     <input name="nama" type="text" class="form-control" id="" aria-describedby="" value="<?php echo (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($edit['nama'])) ? htmlspecialchars($edit['nama'], ENT_QUOTES) : '' ?>">
     
   </div>
-  <button type="submit" class="btn btn-primary" name="submit">daffa paskib yahok</button>
+  <button type="submit" class="btn btn-primary" name="submit">sudmit</button>
 </form>
-daffa love dava

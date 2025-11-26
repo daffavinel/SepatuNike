@@ -1,21 +1,39 @@
 <?php
-// baca value dari $_GET['page'] dan masukkan ke variabel $page
+// session_start();
+require_once('../../config/Database.php');
+require_once('../../model/models.php');
+require_once('../../controller/controllers.php');
+
+
+
 $page = $_GET['page'] ?? 'dashboard';
+$action = $_GET['action'] ?? 'index';
 
-// routing untuk panel admin
-// lihat apakah nilai dari $page sesuai dengan salah satu case di bawah
-switch ($page) {
+// $action = $_GET['action'] ?? 'index';
 
-    case 'dashboard':
-        include "page/dashboard.php";
-        break;
+$genre = new AdminGenreController();
 
-    case 'genre':
-        include "page/input_genre.php";
-        break;
+// Routes for admin panel
 
-    default:
-        echo "Halaman tidak ditemukan";
-        break;
+switch ($page){
+    case 'dashboard' : include "page/dashboard.php"; break;
+    // case 'genre' : include "page/input_genre.php"; break; 
+    case 'genre' : { 
+        switch ($action) {
+            case 'index' : 
+                $genre->index();
+                break;
+            case 'create' : 
+                $genre->create();
+                    if(isset($_POST['submit']))
+                       {
+                           $genre->store();
+                       }
+                break;
+        }
+    } break;
 }
-?>
+
+       
+        // if($_POST) $genre->create();
+    // }
