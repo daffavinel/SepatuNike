@@ -1,3 +1,6 @@
+<?php ob_start(); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- [Head] start -->
@@ -343,7 +346,9 @@
       <!-- [ Main Content ] start -->
       
         <?php 
+
            include "../../route/admin.php";
+           
         ?>
 
     </div>
@@ -400,6 +405,7 @@
   <script>font_change("Public-Sans");</script>
   
     
+<?php ob_end_flush(); ?>
 
 </body>
 <!-- [Body] end -->

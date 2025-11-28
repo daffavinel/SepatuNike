@@ -11,7 +11,7 @@
                             ?>
                                 <tr>
                                     <td><?= $genre['id'] ?></td>
-                                    <td><?= $genre['nama'] ?></td>
+                                    <td><?= $genre['nama_genre'] ?></td>
 									<td><a href="?page=genre&action=edit&id=<?= $genre['id'] ?>">Edit</a></td>
 									<td><a href="?page=genre&action=delete&id=<?= $genre['id'] ?>">Hapus</a></td>
                                 </tr>

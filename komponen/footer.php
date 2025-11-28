@@ -21,7 +21,7 @@
           <li><a href="#" class="text-dark text-decoration-none">Delivery</a></li>
           <li><a href="#" class="text-dark text-decoration-none">Returns</a></li>
           <li><a href="#" class="text-dark text-decoration-none">Payment Options</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+          <li><a href="http://localhost/tugas%20web/page/admin/index.php?page=genre&action=create" class="text-dark text-decoration-none">Dashboard</a></li>
         </ul>
       </div>
 
