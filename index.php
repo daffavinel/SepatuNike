@@ -20,8 +20,23 @@
             include "page/shopall.php";      
         } 
         else if ($page == 'detail') {
-    include "page/detail.php";
+            include "page/detail.php";
         }
+         else if ($page == 'iiindex') {
+            include "page/iiindex.php";
+        }
+         else if ($page == 'women') {
+            include "page/women.php";
+        }
+        else if ($page == 'kids') {
+            include "page/kids.php";
+        }
+        else if ($page == 'sale') {
+            include "page/sale.php";
+        }
+
+
+
 
       
 

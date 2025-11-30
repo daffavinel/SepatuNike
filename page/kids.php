@@ -9,23 +9,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-<nav class="navbar navbar-expand-lg bg-white border-bottom">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="g.html">NIKE</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="iiindex.html">Men</a></li>
-        <li class="nav-item"><a class="nav-link" href="indw.html">Women</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
-        <li class="nav-item"><a class="nav-link" href="sale.html">Sale</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
 
     <!-- Announcement bar -->
     <div class="bg-light border-bottom py-2 text-center small">
@@ -161,63 +145,6 @@
 
 
 <!-- Footer -->
-<footer class="bg-light text-dark pt-5 pb-4">
-  <div class="container">
-    <div class="row">
-     
-      <div class="col-md-4 col-sm-6 mb-3">
-        <h6 class="fw-bold">Resources</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-dark text-decoration-none">Find A Store</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Become A Member</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Running Shoe Finder</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Education Discounts</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Send Us Feedback</a></li>
-        </ul>
-      </div>
-      
-     
-      <div class="col-md-4 col-sm-6 mb-3">
-        <h6 class="fw-bold">Help</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-dark text-decoration-none">Get Help</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Order Status</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Delivery</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Returns</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Payment Options</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
-        </ul>
-      </div>
-      
-     
-      <div class="col-md-4 col-sm-6 mb-3">
-        <h6 class="fw-bold">Company</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">News</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Careers</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Investors</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Sustainability</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Impact</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Report a Concern</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <hr>
-    
-    
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-0">&copy; 2025 YourBrand, Inc. All rights reserved</p>
-      <div>
-        <a href="#" class="text-dark text-decoration-none me-3">Terms of Sale</a>
-        <a href="#" class="text-dark text-decoration-none me-3">Terms of Use</a>
-        <a href="#" class="text-dark text-decoration-none me-3">Privacy Policy</a>
-        <a href="#" class="text-dark text-decoration-none">Privacy Settings</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 </script>
 </body>
