@@ -21,7 +21,7 @@
 
       <!-- Gambar Sepatu -->
       <div class="col-md-4 text-center">
-        <img src="images-removebg-preview (1).png" alt="Nike Alphafly" class="shoe img-fluid">
+        <img src="img/images-removebg-preview (1).png"  class="shoe img-fluid">
         <div class="mt-3">
           <p class="price-tag mb-0">Rp. 4.899.000</p>
           <span class="badge bg-danger">Price Off</span>
@@ -35,7 +35,7 @@
           <span>⬇</span>
           <span>⬇</span>
         </div>
-        <img src="images__2_-removebg-preview.png" alt="Nike Box" class="img-fluid">
+        <img src="img/images__2_-removebg-preview.png" alt="Nike Box" class="img-fluid">
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@
       <p class="card-text">Nike Air Zoom, Regular 41 White Oblique</p>
       <small>Fd2722-110</small>
     </div>
-    <img src="images__1_-removebg-preview.png" 
+    <img src="img/FD2722-110-1-removebg-preview.png" 
          class="position-absolute end-0 top-50 translate-middle-y me-3 rounded-3" 
          alt="sepatu" width="250">
   </div>
